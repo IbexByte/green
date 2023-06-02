@@ -615,7 +615,7 @@
                             <div class="about-one__btn-box-and-signature">
                                 <a href="about.html" class="about-one__btn thm-btn">Discover More</a>
                                 <div class="about-one__signature">
-                                    <img src="{{ asset('storage/assets/images/resources/about-one-signeture.png') }}" alt="">
+                                    {{-- <img src="{{ asset('storage/assets/images/resources/about-one-signeture.png') }}" alt=""> --}}
                                 </div>
                             </div>
                         </div>
