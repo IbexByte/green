@@ -38,6 +38,7 @@ return [
     'updated_successfully' => 'تم تعديل البيانات بنجاح',
     'deleted_successfully' => 'تم حذف البيانات بنجاح',
     'arabic' => 'عربى ',
+    'lang' => 'عربى ',
     'english' => 'انجليزى ',
     'main_lang' => 'اللغة الافتراضية ',
     'settings' => 'الاعدادات ',

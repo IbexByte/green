@@ -1976,6 +1976,11 @@
         display: none;
     }
 
+    .main-menu__logo {
+        
+        width: 35vw;
+      }
+
 
 
 
@@ -2105,6 +2110,11 @@
     .main-slider-two__img-box {
         left: 200px;
     }
+
+    .main-menu__logo {
+        
+        width: 15vw;
+      }
 }
 
 
@@ -2129,9 +2139,11 @@
         padding-bottom: 25px;
     }
 
-    .main-menu__logo a {
-        padding: 28px 80px;
-    }
+
+    .main-menu__logo {
+        
+        width: 15vw;
+      }
 
 
 
@@ -2170,9 +2182,11 @@
         justify-content: flex-end;
     }
 
-    .main-menu__logo a {
-        padding: 28px 80px;
-    }
+      
+    .main-menu__logo {
+        
+        width: 25vw;
+      }
 
     .main-menu__right {
         display: none;
@@ -2215,9 +2229,12 @@
         justify-content: flex-end;
     }
 
-    .main-menu__logo a {
-        padding: 28px 60px;
-    }
+    .main-menu__logo {
+        
+        width: 50vw;
+      }
+
+
 
     .main-menu__right {
         display: none;

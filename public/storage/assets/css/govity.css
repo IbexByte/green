@@ -98,7 +98,7 @@
   --govity-base: #0ca554;
   --govity-base-rgb: 12, 165, 84;
   --govity-black: #f2f7f2;
-  --govity-black-rgb: 21, 21, 21;
+  --govity-black-rgb: 21, 21, 21;  
   --govity-primary: #545f66;
   --govity-primary-rgb: 243, 243, 243;
   --govity-bdr-color: #dddddd;
@@ -155,7 +155,7 @@ h4,
 h5,
 h6 {
   font-family: var(--govity-font);
-  color: var(--govity-black);
+  color: var(--govity-primary);
   margin: 0;
   letter-spacing: var(--govity-letter-spacing);
 }
@@ -345,7 +345,7 @@ ul {
 
 .section-title__title {
   margin: 0;
-  color: var(--govity-black);
+  color: var(--govity-primary);
   font-size: 45px;
   line-height: 54px;
   font-weight: 700;
@@ -3709,7 +3709,7 @@ ul {
   margin-top: 27px;
   font-size: 60px;
   font-weight: 700;
-  color: var(--govity-white);
+  color: var(--govity-primary);
   font-family: var(--govity-font);
   line-height: 72px;
 }

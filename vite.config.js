@@ -8,17 +8,13 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/scss/app.scss',
+                'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/main.js',
-                'resources/css/animate/custom.css',
-                'resources/css/nouislider/nouislider.css',
-                'resources/css/govity-icons/style.css',
-                'resources/css/reey-font/stylesheet.css',
-                'resources/css/main.css',
-                'resources/vendors/nice-select/jquery.nice-select.min.js',
-                'resources/vendors/circleType/jquery.lettering.min.js',
-                'resources/vendors/circleType/jquery.circleType.js',
-                'resources/vendors/circleType/vendors/timepicker/timePicker.js',
+                'resources/css/admin.css',
+                'resources/views/admin/js/index.js',
+                'resources/views/admin/js/us-aea-en.js'
+    
                 // 'resources/css/main-rtl.css',
             ],
             refresh: [

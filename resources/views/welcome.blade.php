@@ -1,3 +1,3 @@
-@extends("layouts.guest")
+@extends("layouts.main")
 @section("content")
 @endsection

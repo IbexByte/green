@@ -89,17 +89,19 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
 :root {
-  --govity-font: "DM Sans", sans-serif;
+  --govity-font:  'Almarai', sans-serif;
   --govity-gray: #888888;
   --govity-gray-rgb: 136, 136, 136;
-  --govity-white: #ffffff;
+  --govity-white: #e6e6fa;
   --govity-white-rgb: 255, 255, 255;
   --govity-base: #0ca554;
   --govity-base-rgb: 12, 165, 84;
-  --govity-black: #151515;
+  --govity-black: #f2f7f2;
   --govity-black-rgb: 21, 21, 21;
-  --govity-primary: #f3f3f3;
+  --govity-primary: #545f66;
   --govity-primary-rgb: 243, 243, 243;
   --govity-bdr-color: #dddddd;
   --govity-bdr-color-rgb: 221, 221, 221;
@@ -445,7 +447,7 @@ ul {
   animation-name: flipInY;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  background-image: url(../images/loader.png);
+  background-image: url(../images/loader.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
@@ -515,12 +517,16 @@ ul {
   z-index: 1;
 }
 
+
+
 .main-menu__logo {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 1;
+  height: 100%;
+  width: 35vw;
 }
 
 .main-menu__logo a {
@@ -529,8 +535,16 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: var(--govity-black);
-  padding: 49px 80px;
+  height: 100%;
+  width: 100%;
+ 
 }
+.main-menu__logo  img {
+  height: 100%;
+  width: 100%;
+ 
+}
+
 
 .main-menu {
   position: relative;
@@ -2136,7 +2150,9 @@ ul {
 }
 
 .main-slider__btn-box {
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 30%;
   display: block;
   opacity: 0;
   visibility: hidden;
@@ -2804,11 +2820,12 @@ ul {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: var(--govity-letter-spacing-two);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .department-one__title a {
-  color: var(--govity-black);
+  color: var(--govity-primary);
   transition: all 500ms ease;
 }
 
@@ -2819,7 +2836,7 @@ ul {
 .department-one__icon {
   position: absolute;
   top: -56px;
-  left: -35px;
+  right: -35px;
   width: 141px;
   height: 141px;
   border-radius: 50%;
@@ -2830,15 +2847,17 @@ ul {
   z-index: 1;
 }
 
+
+
 .department-one__icon:before {
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   content: "";
   border-radius: 50%;
-  background-color: var(--govity-black);
+  background-color: var(--govity-primary);
   transform: scale(0);
   transform-origin: center;
   transform-style: preserve-3d;
@@ -2855,7 +2874,18 @@ ul {
   color: var(--govity-base);
   position: relative;
   top: 24px;
-  left: 12px;
+  right: 12px;
+  transition: all 500ms linear;
+  transition-delay: 0.1s;
+  transform: scale(1);
+}
+
+.department-one__icon svg {
+  font-size: 34px;
+  color: var(--govity-base);
+  position: relative;
+  top: 24px;
+  right: 12px;
   transition: all 500ms linear;
   transition-delay: 0.1s;
   transform: scale(1);
@@ -2864,6 +2894,10 @@ ul {
 .department-one__single:hover .department-one__icon span {
   transform: scale(0.9);
   color: var(--govity-white);
+}
+.department-one__single:hover .department-one__icon svg {
+  transform: scale(0.7);
+  color: var(--govity-base);
 }
 
 .department-one__text {

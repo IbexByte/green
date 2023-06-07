@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +18,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin', function () {
+    return view('admin.index');
+});
 
+
+Route::get('/lang/{locale}', function (string $locale) {
+    if (!in_array($locale, ['ar', 'en'])) {
+        abort(400);
+    }
+    Session::put('locale', $locale);
+    return back();
+})->name('lang');
+Route::resource('news', NewsController::class);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
